@@ -1,7 +1,9 @@
-(define (+ a b)
-  (if (= a 0)
-      b
-      (inc (+ (dec a) b))))
+#lang sicp
+
+; (define (+ a b)
+;   (if (= a 0)
+;       b
+;       (inc (+ (dec a) b))))
 
 ;;; The first one is a recursive process because the final form of the function will be something along the lines of
 ;;; (inc(inc(inc(inc(...inc(b)))) depending on how many times a will be decremented.
